@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class TicTacGameUC12 {
+public class TicTacGameUC13 {
 	static String[] board;
 	static String turn;
 
@@ -65,7 +65,7 @@ public class TicTacGameUC12 {
 		return null;
 		}
 
-	static void printBoard() {
+	    static void printBoard() {
 		System.out.println("|---|---|---|");
 		System.out.println("| " + board[0] + " | "
 				+ board[1] + " | " + board[2]
@@ -81,7 +81,8 @@ public class TicTacGameUC12 {
 		System.out.println("|---|---|---|");
 		}
 
-	public static void main(String[] args) {
+	    public static void main(String[] args) {
+	    	
 		Scanner in = new Scanner(System.in);
 		board = new String[9];
 		turn = "X";
@@ -140,7 +141,11 @@ public class TicTacGameUC12 {
 			System.out.println(
 					"Congratulations! " + winner
 					+ "'s have won! Thanks for playing.");
+		System.out.println("Can you play again(y/n)");
+		//printBoard();
 		}
 		}
 		}
+
+
 
