@@ -1,22 +1,19 @@
 package com.game;
 
 import java.lang.reflect.Array;
-import java.util.Scanner;
 
-
-public class TicTocGameUC1 {
+public class TicTacGameUC2 {
+	static Array[] board;
+	static void printBoard() {
+		
+	}
+	public static void main(String[] args) {
+	// TODO Auto-generated method stub
+	board = new Array[9];
 	
-static Array[] board;
-static void printBoard() {
-
-}
-public static void main(String[] args) {
-    board = new Array[9];
-//    for (int a = 0; a < 9; i++) {
-//        board[a] = String.valueOf(a + 1);
-//    }
-//
-//    printBoard();
-}
-}
+	System.out.println();
+	printBoard();
+	System.out.println("player1 will play . Enter a slot number to place X in:");
+	}
+	}
 
