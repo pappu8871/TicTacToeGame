@@ -1,9 +1,8 @@
 package com.game;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class TicTacGameUC5 {
+public class TicTacGameUC6 {
 	static String turn;
 	static String[] board;
 
@@ -21,14 +20,12 @@ public class TicTacGameUC5 {
 				+ board[7] + " | " + board[8]
 						+ " |");
 		System.out.println("|---|---|---|");
-	}
-
-
+		}
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
 		board = new String[9];
 		turn = "X";
-		String winner = null;
+		int IS_GAIN = 1;
 		for (int a = 0; a < 9; a++) {
 			board[a] = String.valueOf(a + 1);
 		}
@@ -36,33 +33,12 @@ public class TicTacGameUC5 {
 		printBoard();
 		System.out.println();
 		System.out.println("Play with two player");
-		System.out.println(
-				"player 1st will play . Enter a slot number to place X in:");
 
-		while (winner == null) {
-			int numInput = 0;
-
-			if (board[numInput - 1].equals(
-					String.valueOf(numInput))) {
-				board[numInput - 1] = turn;
-
-				if (turn.equals("X")) {
-					turn = "O";
-				}
-				else {
-					turn = "X";
-				}
-
-				printBoard();
-				winner = (String) checkWinner();
-			} else {
-				System.out.println(
-						"Slot already taken; re-enter slot number:");
-			}
-			}
+		double check = Math.floor(Math.random() * 10) % 2;
+		if (check == IS_GAIN) {
+			System.out.println("Player 1st will Start game ");
+		}else {
+			System.out.println("Player 2nd will start game");
 		}
-	private static Object checkWinner() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	}
+		}
+		}
