@@ -1,11 +1,22 @@
 package com.game;
 
-public class WelcomeTicTacToe {
+import java.lang.reflect.Array;
+import java.util.Scanner;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-		System.out.println("Welcome TicTacToe Game");
-	}
+public class TicTocGameUC1 {
+	
+static Array[] board;
+static void printBoard() {
 
 }
+public static void main(String[] args) {
+    board = new Array[9];
+//    for (int a = 0; a < 9; i++) {
+//        board[a] = String.valueOf(a + 1);
+//    }
+//
+//    printBoard();
+}
+}
+
